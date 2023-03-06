@@ -633,8 +633,8 @@ class GeneralTest {
         this.inputInsuranceSum('default');
         cy.get(ERROR_INSURANCE_SUM)
             .should('have.text', 'Select an option');
-        this.inputDamageInsurance();
-        this.inputDamageInsurance('default');
+        this.inputOptionalProduct('Euro Protection');
+        this.inputOptionalProduct('Euro Protection');
         cy.get(ERROR_OPTIONAL_PRODUCT)
             .should('have.text', 'Select at least 1 options');
     }
